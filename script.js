@@ -3,21 +3,66 @@ var timer = document.querySelector('#timer');
 var question = document.querySelector('#question');
 var choices = document.querySelector('#choices');
 
-var time = 2;
+var time = 100;
 var index = 0;
 var questions = [
     {
-        question: "What is 1+1?",
+        question: "What is a boolean?",
         choices: [0,1,2,3],
         answer: 2
     },
     {
-        question:"What is 1+2?",
+        question:"An array is signaled by what?",
         choices: [0,1,2,3],
         answer: 3
     },
     {
-        question:"What is 1-1?",
+        question:"A string is placed in what?",
+        choices: [0,1,2,3],
+        answer: 0
+    },
+    {
+        question:"The most important datatype in JS is?",
+        choices: [0,1,2,3],
+        answer: 0
+    },
+    {
+        question:"A method is composed of?",
+        choices: [0,1,2,3],
+        answer: 0
+    },
+    {
+        question:"A string is placed in what?",
+        choices: [0,1,2,3],
+        answer: 0
+    },
+    {
+        question:"A string is placed in what?",
+        choices: [0,1,2,3],
+        answer: 0
+    },
+    {
+        question:"A string is placed in what?",
+        choices: [0,1,2,3],
+        answer: 0
+    },
+    {
+        question:"A string is placed in what?",
+        choices: [0,1,2,3],
+        answer: 0
+    },
+    {
+        question:"A string is placed in what?",
+        choices: [0,1,2,3],
+        answer: 0
+    },
+    {
+        question:"A string is placed in what?",
+        choices: [0,1,2,3],
+        answer: 0
+    },
+    {
+        question:"A string is placed in what?",
         choices: [0,1,2,3],
         answer: 0
     },
@@ -39,8 +84,19 @@ function displayTime() {
 }
 
 function displayQuestions (){
-    question.textContent = questions[index].question
-
+    question.textContent = questions[index].question;
+    var currentQuestion = questions[index];
+    for(var i = 0; i < currentQuestions.choices.length; i++){
+        var choicesButton = document.createElement('button');
+        var choice = currentQuestion.choices[i];
+    }
+    
+    
+    //display each choice on each button
+    //append each button to choices div
+    //create onclick event for each button
+    //if correct: index++, call displayQuestions()
+    //if not correct: index++, call displayQuestions()
 
 }
 
