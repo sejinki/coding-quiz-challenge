@@ -3,7 +3,7 @@ var timer = document.querySelector('#timer');
 var question = document.querySelector('#question');
 var choices = document.querySelector('#choices');
 
-var time = 100;
+var time = 2;
 var index = 0;
 var questions = [
     {
@@ -31,41 +31,17 @@ var questions = [
         choices: [0,1,2,3],
         answer: 0
     },
-    {
-        question:"A string is placed in what?",
-        choices: [0,1,2,3],
-        answer: 0
-    },
-    {
-        question:"A string is placed in what?",
-        choices: [0,1,2,3],
-        answer: 0
-    },
-    {
-        question:"A string is placed in what?",
-        choices: [0,1,2,3],
-        answer: 0
-    },
-    {
-        question:"A string is placed in what?",
-        choices: [0,1,2,3],
-        answer: 0
-    },
-    {
-        question:"A string is placed in what?",
-        choices: [0,1,2,3],
-        answer: 0
-    },
-    {
-        question:"A string is placed in what?",
-        choices: [0,1,2,3],
-        answer: 0
-    },
-    {
-        question:"A string is placed in what?",
-        choices: [0,1,2,3],
-        answer: 0
-    },
+    // {
+    //     question:"A string is placed in what?",
+    //     choices: [
+    //         1 square brackets,
+    //         2. curly braces,
+    //         3. single or double quotes,
+    //         4. bold tags,
+    //     ],
+    //     answer: 3
+    // },
+
 ]
 
 function displayTime() {
@@ -86,9 +62,17 @@ function displayTime() {
 function displayQuestions (){
     question.textContent = questions[index].question;
     var currentQuestion = questions[index];
-    for(var i = 0; i < currentQuestions.choices.length; i++){
+    console.log(currentQuestion);
+    for(var i = 0; i < currentQuestion.choices.length; i++){
         var choicesButton = document.createElement('button');
         var choice = currentQuestion.choices[i];
+        console.log(choice);
+        choicesButton.textContent = i + choice;
+        choices.append(choicesButton);
+    }
+
+    function nextQuestion () {
+
     }
     
     
