@@ -83,7 +83,7 @@ function displayTime() {
     }, 1000);
 
 }
-highscore.className = 'highscore';
+
 function displayQuestions() {
     question.textContent = questions[index].question;
     var currentQuestion = questions[index];
@@ -175,8 +175,6 @@ startButton.addEventListener('click', function () {
     displayQuestions();
     console.log('')
 })
-
-displayHighscore()
 
 // event.preventDefault();
 
