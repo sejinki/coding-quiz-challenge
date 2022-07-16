@@ -66,6 +66,10 @@ var questions = [
     //     answer: 3
     // },
 
+    //function myFunction() {
+    //var element = document.getElementById("myDIV");
+    //element.classList.add("mystyle");
+
 ]
 
 function displayTime() {
@@ -97,6 +101,7 @@ function displayQuestions() {
         choicesButton.className = "choices"
         choices.append(choicesButton);
         choicesButton.addEventListener('click', nextQuestion);
+        
     }
     
     function nextQuestion(event) {
@@ -114,6 +119,7 @@ function displayQuestions() {
         } else {
             endQuiz()
         }
+        event.preventDefault();
     }
 
 
