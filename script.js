@@ -15,27 +15,42 @@ var questions = [
         choices: ["1. true or false value",
             "2. it is a number",
             "3. it is something random",
-            "4. it is none of the above"],
+            "4. it is none of the above"
+                ],
         answer: 0
     },
     {
         question: "An array is signaled by what?",
-        choices: [0, 1, 2, 3],
-        answer: 3
+        choices: ["1. curly braces.",
+            "2. square brackets",
+            "3. paranthesis",
+            "4. equal sign"
+            ],
+        answer: 1
     },
     {
         question: "A string is placed in what?",
-        choices: [0, 1, 2, 3],
+        choices: ["1. single quotes",
+            "2. double quotes",
+            "3. 1 & 2",
+            "4. none of the above"
+            ],
         answer: 0
     },
     {
         question: "The most important datatype in JS is?",
-        choices: [0, 1, 2, 3],
-        answer: 0
+        choices: ["1. array",
+            "2. object",
+            "3. function",
+            "4. strings"
+        ],
+        answer: 2
     },
     {
-        question: "A method is composed of?",
-        choices: [0, 1, 2, 3],
+        question: "Javascript is the most popular coding language",
+        choices: ["1. true",
+            "2. false"
+            ],
         answer: 0
     },
     // {
