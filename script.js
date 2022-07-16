@@ -141,6 +141,7 @@ function endQuiz() {
     });
     form.append(inButton);
     inButton.innerText = 'submit';
+    document.querySelector("#highscoreEl").setAttribute("style", "display:block;");
 }
 
 

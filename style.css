@@ -13,3 +13,7 @@
 .highscore {
     display: none;
 }
+
+#highscoreEl { 
+    display: none;
+}
